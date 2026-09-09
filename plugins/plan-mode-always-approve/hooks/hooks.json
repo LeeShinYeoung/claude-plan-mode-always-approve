@@ -1,12 +1,12 @@
 {
   "hooks": {
-    "PreToolUse": [
+    "PermissionRequest": [
       {
         "matcher": "ExitPlanMode",
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"allow\",\"permissionDecisionReason\":\"Plan approved by plan-mode-always-approve\",\"updatedInput\":{}}}'"
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR/.claude/plan-mode-always-approve\" ]; then echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PermissionRequest\",\"decision\":{\"behavior\":\"allow\",\"updatedInput\":{},\"updatedPermissions\":[{\"type\":\"setMode\",\"mode\":\"auto\",\"destination\":\"session\"}]}}}'; fi"
           }
         ]
       }
