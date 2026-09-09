@@ -1,0 +1,9 @@
+{
+  "name": "plan-mode-always-approve",
+  "version": "0.1.0",
+  "description": "Skips the plan approval prompt: when Claude finishes planning and leaves plan mode, the plan is approved automatically.",
+  "author": {
+    "name": "LeeShinYeoung",
+    "url": "https://github.com/LeeShinYeoung"
+  }
+}
