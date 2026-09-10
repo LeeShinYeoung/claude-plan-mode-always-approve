@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "A single-hook plugin that always approves Claude Code's plan confirmation prompt and continues in auto mode.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "plan-mode-always-approve",
       "source": "./plugins/plan-mode-always-approve",
       "description": "Skips the plan approval prompt: when Claude finishes planning and leaves plan mode, the plan is approved automatically and the session continues in auto mode.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "LeeShinYeoung",
         "url": "https://github.com/LeeShinYeoung"

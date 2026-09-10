@@ -1,6 +1,6 @@
 {
   "name": "plan-mode-always-approve",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Skips the plan approval prompt: when Claude finishes planning and leaves plan mode, the plan is approved automatically and the session continues in auto mode.",
   "author": {
     "name": "LeeShinYeoung",

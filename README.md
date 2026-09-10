@@ -21,3 +21,5 @@ Installing it doesn't turn anything on. Run the commands below from a session in
 /plan-mode-always-approve:on    # turn auto-approval on
 /plan-mode-always-approve:off   # turn auto-approval off
 ```
+
+Which projects are on is kept in your home directory, in `~/.claude/plan-mode-always-approve`, one project path per line. Nothing is written into the project itself, so there is no new file to commit and nothing to add to `.gitignore`.
